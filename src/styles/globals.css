@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./typography.css";
+
+@theme {
+  /* Brand Palette */
+  --color-indigo: var(--palette-indigo);
+  --color-earth: var(--palette-earth);
+  --color-cotton: var(--palette-cotton);
+  --color-gold: var(--palette-gold);
+
+  /* Foundation Colors */
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  
+  /* Layout Maps */
+  --width-container: var(--container-max);
+  --width-reading: var(--reading-width);
+
+  /* Spacing */
+  --spacing-section: var(--space-section);
+
+  /* Typography */
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  /* Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  
+  /* Shadows */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+}
+
+@layer base {
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
