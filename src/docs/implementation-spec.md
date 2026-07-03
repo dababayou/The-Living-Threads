@@ -2321,3 +2321,17 @@ No further creative modifications are allowed.
 Future sections must adapt to Nature.
 
 Nature must not adapt to future sections.
+
+## Editorial Escalation Rule
+
+Each section must introduce one new dominant visual language.
+
+Hero introduced philosophy.
+
+Nature introduced atmosphere.
+
+Craft introduces human gesture.
+
+Future sections must contribute a new visual language instead of repeating previous compositions.
+
+Every chapter should be immediately recognizable from a single screenshot.
