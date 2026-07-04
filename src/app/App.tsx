@@ -3,6 +3,7 @@ import { Nature } from '../sections/Nature';
 import { Craft } from '../sections/Craft';
 import { Meaning } from '../sections/Meaning';
 import { LivingHeritage } from '../sections/LivingHeritage';
+import { Hope } from '../sections/Hope';
 import { useSmoothScroll } from '../animations';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Craft />
       <Meaning />
       <LivingHeritage />
+      <Hope />
     </main>
   );
 }

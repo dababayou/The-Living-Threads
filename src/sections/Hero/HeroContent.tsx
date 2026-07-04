@@ -3,20 +3,51 @@ import { Heading, Prose, Text } from '../../components/typography';
 
 export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <div ref={ref} className="flex flex-col gap-6 lg:gap-8">
+    <div ref={ref} className="flex flex-col items-center text-center gap-6 lg:gap-8 max-w-2xl mx-auto">
       <div className="hero-text-node">
-        <Heading variant="eyebrow" level={2}>
+        <Text variant="caption" className="uppercase tracking-widest text-text-muted">
+          A Digital Initiative for Living Heritage
+        </Text>
+      </div>
+      
+      <div className="hero-text-node">
+        <Heading variant="display" level={1}>
           The Living Threads
         </Heading>
       </div>
       
       <div className="hero-text-node">
-        <Heading variant="display" level={1}>
+        <Prose>
+          <p className="text-text-muted text-lg lg:text-xl">
+            A digital cultural initiative dedicated to preserving and celebrating the living heritage of Sumba Ikat.
+          </p>
+        </Prose>
+      </div>
+      
+      <div className="hero-text-node pt-4">
+        <Text 
+          variant="body" 
+          className="uppercase tracking-wider text-sm opacity-80"
+        >
+          Begin the journey.
+        </Text>
+      </div>
+    </div>
+  );
+});
+
+HeroContent.displayName = 'HeroContent';
+
+export const HeroNarrative = forwardRef<HTMLDivElement>((_, ref) => {
+  return (
+    <div ref={ref} className="flex flex-col items-center text-center gap-6 lg:gap-8 max-w-2xl mx-auto">
+      <div className="hero-narrative-node">
+        <Heading variant="display" level={2}>
           Woven Time and Sacred Craft
         </Heading>
       </div>
       
-      <div className="hero-text-node">
+      <div className="hero-narrative-node">
         <Prose>
           <p>
             Discover the ancestral art of Sumba Ikat. Every thread holds a story, 
@@ -25,18 +56,8 @@ export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
           </p>
         </Prose>
       </div>
-      
-      <div className="hero-text-node pt-4">
-        <Text 
-          as="button" 
-          variant="body" 
-          className="border-b border-text pb-1 hover:text-text-muted transition-colors uppercase tracking-wider text-sm"
-        >
-          Begin the Journey
-        </Text>
-      </div>
     </div>
   );
 });
 
-HeroContent.displayName = 'HeroContent';
+HeroNarrative.displayName = 'HeroNarrative';
