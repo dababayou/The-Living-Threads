@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
-import { Heading, Prose, Text } from '../../components/typography';
+import { Heading, Prose } from '../../components/typography';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 export const NatureNarrative = forwardRef<HTMLDivElement>((_, ref) => {
