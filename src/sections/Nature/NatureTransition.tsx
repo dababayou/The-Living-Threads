@@ -1,9 +1,12 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
+import { useLanguage } from '../../contexts/LanguageContext';
 import ntrtrsImg from '../../assets/images/natur.jpg';
 
 export const NatureTransition = forwardRef<HTMLDivElement>((_, ref) => {
+  const { t } = useLanguage();
+
   return (
     <div ref={ref}>
       <Container className="max-w-[var(--reading-width)] mx-auto flex flex-col items-center text-center">
@@ -24,8 +27,8 @@ export const NatureTransition = forwardRef<HTMLDivElement>((_, ref) => {
         
         <div className="nature-transition-text">
           <Heading variant="display" level={3}>
-            Nature provides. <br />
-            Humans respond.
+            {t('Nature provides.')} <br />
+            {t('Humans respond.')}
           </Heading>
         </div>
         
@@ -48,7 +51,7 @@ export const NatureTransition = forwardRef<HTMLDivElement>((_, ref) => {
            </div>
            
            <span className="text-text-muted bg-background/95 backdrop-blur-sm px-4 py-2 border border-[#d3cdc2]/50 font-body text-xs uppercase tracking-widest relative z-10 mx-auto">
-              Threshold of Craft
+              {t('Threshold of Craft')}
            </span>
         </div>
       </Container>

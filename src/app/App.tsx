@@ -7,20 +7,26 @@ import { Hope } from '../sections/Hope';
 import { Footer } from '../sections/Footer';
 import { useSmoothScroll } from '../animations';
 import { GlobalThread } from '../components/GlobalThread';
+import { LanguageProvider } from '../contexts/LanguageContext';
+import { Header } from '../components/Header';
 
 export default function App() {
   useSmoothScroll();
 
   return (
-    <main className="min-h-screen bg-background text-text relative">
-      <GlobalThread />
-      <Hero />
-      <Nature />
-      <Craft />
-      <Meaning />
-      <LivingHeritage />
-      <Hope />
-      <Footer />
-    </main>
+    <LanguageProvider>
+      <main className="min-h-screen bg-background text-text relative z-0">
+        <Header />
+        <GlobalThread />
+        <Hero />
+        <Nature />
+        <Craft />
+        <Meaning />
+        <LivingHeritage />
+        <Hope />
+        <Footer />
+      </main>
+    </LanguageProvider>
   );
 }
+

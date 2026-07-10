@@ -1,9 +1,12 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
+import { useLanguage } from '../../contexts/LanguageContext';
 import ntrtrs from '../../assets/images/ntrtrs.jpg';
 
 export const CraftTransition = forwardRef<HTMLDivElement>((_, ref) => {
+  const { t } = useLanguage();
+
   return (
     <div ref={ref}>
       <Container className="max-w-[var(--reading-width)] mx-auto flex flex-col items-center text-center">
@@ -20,7 +23,7 @@ export const CraftTransition = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
           <div className="craft-transition-stack-front absolute inset-0 bg-[#f9f7f3] border border-border flex items-start justify-center pt-3 pb-3 shadow-md transition-transform relative z-10">
             <span className="text-text-muted font-body text-xs uppercase tracking-widest opacity-80 mt-2">
-              Prepared Material
+              {t('Prepared Material')}
             </span>
           </div>
         </div>

@@ -1,8 +1,11 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
-import { Heading, Prose } from '../../components/typography';
+import { Heading, Prose, Text } from '../../components/typography';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export const NatureNarrative = forwardRef<HTMLDivElement>((_, ref) => {
+  const { t } = useLanguage();
+
   return (
     <div ref={ref} className="relative z-10">
       <Container className="max-w-[var(--reading-width)] mx-auto text-center lg:text-left mb-32 lg:mb-48 -mt-16 lg:-mt-32">
@@ -20,7 +23,7 @@ export const NatureNarrative = forwardRef<HTMLDivElement>((_, ref) => {
           <div className="nature-narrative-text">
             <Prose className="lg:max-w-md lg:ml-auto text-text-muted">
               <p>
-                Nature is the silent collaborator. The colors, the fibers, and the time required to grow them exist long before human hands begin their work. Everything is born from the soil.
+                {t('Nature is the silent collaborator. The colors, the fibers, and the time required to grow them exist long before human hands begin their work. Everything is born from the soil.')}
               </p>
             </Prose>
           </div>

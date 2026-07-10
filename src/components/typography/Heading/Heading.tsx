@@ -1,5 +1,7 @@
 import type { ReactNode, ElementType } from 'react';
 import { cn } from '../../../lib/utils';
+import { useLanguage } from '../../../contexts/LanguageContext';
+import { translations } from '../../../content/translations';
 
 export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 export type HeadingVariant = 'display' | 'headline' | 'title' | 'eyebrow';
@@ -17,6 +19,7 @@ export function Heading({
   variant = 'headline',
   className,
 }: HeadingProps) {
+  const { language } = useLanguage();
   const Component = `h${level}` as ElementType;
 
   const variants = {
@@ -26,9 +29,17 @@ export function Heading({
     eyebrow: 'font-body text-sm tracking-widest uppercase text-text-muted',
   };
 
+  let displayContent = children;
+  if (typeof children === 'string') {
+    const trimmed = children.trim();
+    if (translations[language] && translations[language][trimmed]) {
+      displayContent = children.replace(trimmed, translations[language][trimmed]);
+    }
+  }
+
   return (
     <Component className={cn(variants[variant], className)}>
-      {children}
+      {displayContent}
     </Component>
   );
 }

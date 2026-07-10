@@ -1,8 +1,11 @@
 import { Section, Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
+import { useLanguage } from '../../contexts/LanguageContext';
 import footbc from '../../assets/images/footbc.png';
 
 export function Footer() {
+  const { t } = useLanguage();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -34,17 +37,19 @@ export function Footer() {
             onClick={scrollToTop}
             className="group flex flex-col items-center gap-4 cursor-pointer transition-opacity hover:opacity-70 border-none bg-transparent"
           >
-            <span className="text-xs uppercase tracking-widest text-text-muted">Return to Source</span>
-            <div className="w-[1px] h-12 bg-text-muted/50 group-hover:h-16 transition-all duration-300"></div>
+            <span className="text-xs uppercase tracking-widest text-text-muted">{t('Return to Source')}</span>
+            <div className="h-16 flex items-start justify-center">
+              <div className="w-[1px] h-12 bg-text-muted/50 group-hover:h-16 transition-all duration-300"></div>
+            </div>
           </button>
         </div>
 
         <div className="border-t border-border/50 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-xs tracking-wide text-text-muted uppercase relative z-10">
-          <div>© {new Date().getFullYear()} The Living Threads</div>
+          <div>© {new Date().getFullYear()} TENUNA: The Living Threads</div>
           <div className="flex gap-8">
-            <span className="hover:text-text cursor-pointer transition-colors">Instagram</span>
-            <span className="hover:text-text cursor-pointer transition-colors">Exhibition</span>
-            <span className="hover:text-text cursor-pointer transition-colors">Credits</span>
+            <span className="hover:text-text cursor-pointer transition-colors">{t('Instagram')}</span>
+            <span className="hover:text-text cursor-pointer transition-colors">{t('Exhibition')}</span>
+            <span className="hover:text-text cursor-pointer transition-colors">{t('Credits')}</span>
           </div>
         </div>
       </Container>

@@ -1,7 +1,10 @@
 import { forwardRef } from 'react';
 import { Heading, Prose, Text } from '../../components/typography';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
+  const { t } = useLanguage();
+
   return (
     <div ref={ref} className="flex flex-col items-center text-center gap-6 lg:gap-8 max-w-2xl mx-auto">
       <div className="hero-text-node">
@@ -19,7 +22,7 @@ export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
       <div className="hero-text-node">
         <Prose>
           <p className="text-text-muted text-lg lg:text-xl">
-            A digital cultural initiative dedicated to preserving and celebrating the living heritage of Sumba Ikat.
+            {t('A digital cultural initiative dedicated to preserving and celebrating the living heritage of Sumba Ikat.')}
           </p>
         </Prose>
       </div>
@@ -39,6 +42,8 @@ export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
 HeroContent.displayName = 'HeroContent';
 
 export const HeroNarrative = forwardRef<HTMLDivElement>((_, ref) => {
+  const { t } = useLanguage();
+
   return (
     <div ref={ref} className="flex flex-col items-center text-center gap-6 lg:gap-8 max-w-2xl mx-auto">
       <div className="hero-narrative-node">
@@ -50,9 +55,7 @@ export const HeroNarrative = forwardRef<HTMLDivElement>((_, ref) => {
       <div className="hero-narrative-node">
         <Prose>
           <p>
-            Discover the ancestral art of Sumba Ikat. Every thread holds a story, 
-            every pattern speaks of the cosmos, and every textile is a bridge 
-            between the living and the divine.
+            {t('Discover the ancestral art of Sumba Ikat. Every thread holds a story, every pattern speaks of the cosmos, and every textile is a bridge between the living and the divine.')}
           </p>
         </Prose>
       </div>
