@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
+import ntrtrsImg from '../../assets/images/natur.jpg';
 
 export const NatureTransition = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -29,9 +30,24 @@ export const NatureTransition = forwardRef<HTMLDivElement>((_, ref) => {
         </div>
         
         {/* Dense, structural threshold leading to Craft */}
-        <div className="nature-transition-threshold mt-24 w-full aspect-[16/10] bg-[#e3dfd7] relative flex flex-col justify-end p-8 border border-[#d3cdc2]">
-           <div className="absolute inset-4 border border-[#d3cdc2]/50" />
-           <span className="text-text-muted font-body text-xs uppercase tracking-widest relative z-10 mx-auto">
+        <div className="nature-transition-threshold mt-24 w-full aspect-[16/10] relative flex flex-col justify-end p-8 border border-[#d3cdc2] overflow-hidden">
+           {/* Blurred background image outside the inner frame */}
+           <img 
+             src={ntrtrsImg} 
+             alt="" 
+             className="absolute inset-0 w-full h-full object-cover blur-[6px] scale-[1.03] pointer-events-none" 
+           />
+           
+           {/* Sharp foreground image aligned perfectly inside the inner frame */}
+           <div className="absolute inset-4 overflow-hidden border border-[#d3cdc2]/50">
+             <img 
+               src={ntrtrsImg} 
+               alt="Threshold of Craft" 
+               className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] max-w-none object-cover" 
+             />
+           </div>
+           
+           <span className="text-text-muted bg-background/95 backdrop-blur-sm px-4 py-2 border border-[#d3cdc2]/50 font-body text-xs uppercase tracking-widest relative z-10 mx-auto">
               Threshold of Craft
            </span>
         </div>

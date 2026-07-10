@@ -104,7 +104,7 @@ export function Meaning() {
   }, []);
 
   return (
-    <Section id="meaning" className="relative bg-background text-text overflow-hidden py-0">
+    <Section id="meaning" className="relative text-text overflow-hidden py-0">
       <div ref={scopeRef}>
         <MeaningArrival ref={arrivalRef} />
         <MeaningLookAgain ref={lookRef} />

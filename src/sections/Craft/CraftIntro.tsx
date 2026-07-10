@@ -1,16 +1,17 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
+import sentuhImg from '../../assets/images/sentuh.jpg';
 
 export const CraftIntro = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div ref={ref}>
       <Container className="mb-32 lg:mb-48 mt-16 lg:mt-32 text-center lg:text-left flex flex-col lg:flex-row items-center lg:items-end gap-16 lg:gap-24">
-      <div className="craft-intro-visual w-full lg:w-1/2 aspect-square lg:aspect-[4/5] bg-gradient-to-tr from-[#dcd9d2] to-surface border border-border shadow-sm flex items-start p-8 relative overflow-hidden">
-        <span className="craft-intro-caption text-text-muted font-body text-xs tracking-widest uppercase relative z-10 opacity-70">
+      <div className="craft-intro-visual w-full lg:w-1/2 aspect-square lg:aspect-[4/5] border border-border shadow-sm relative overflow-hidden rounded-sm">
+        <img src={sentuhImg} alt="The First Human Touch" className="absolute inset-0 w-full h-full object-cover" />
+        <span className="craft-intro-caption absolute top-8 left-8 text-text-muted bg-background/95 backdrop-blur-sm px-4 py-2 border-l-2 border-text font-body text-xs tracking-widest uppercase z-10">
           The First Human Touch
         </span>
-        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-surface rounded-full opacity-30 blur-3xl"></div>
       </div>
       
       <div className="w-full lg:w-1/2 lg:pb-16 lg:pr-8">

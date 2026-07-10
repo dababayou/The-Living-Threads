@@ -84,8 +84,8 @@ export function Nature() {
 
           // Soft erosion reveal for large imagery
           tl.fromTo(image, 
-            { opacity: 0, y: 30 },
-            { opacity: 1, y: 0, duration: DURATION.slower, ease: EASE.default }
+            { opacity: 0, yPercent: 5 },
+            { opacity: 1, yPercent: 0, duration: DURATION.slower, ease: EASE.default }
           )
           // Caption blooms
           .fromTo(caption,
@@ -100,8 +100,8 @@ export function Nature() {
             "-=0.2"
           );
 
-          // Parallax strategy: Images (Midground) move slightly slower than scroll
-          gsap.to(image, {
+          // Parallax strategy: Animate both image and caption together so they don't overlap
+          gsap.to([image, caption], {
             y: 40,
             ease: 'none',
             scrollTrigger: {
@@ -156,7 +156,7 @@ export function Nature() {
   }, []);
 
   return (
-    <Section id="nature" className="relative bg-background text-text overflow-hidden !pt-0 pb-24 lg:pb-32">
+    <Section id="nature" className="relative text-text overflow-hidden !pt-0 pb-24 lg:pb-32">
       <div ref={scopeRef}>
         <NatureAtmosphere ref={atmosphereRef} />
         <NatureNarrative ref={narrativeRef} />

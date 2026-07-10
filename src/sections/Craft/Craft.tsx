@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Section } from '../../components/layout';
 import { CraftIntro } from './CraftIntro';
 import { CraftGesture } from './CraftGesture';
-import { CraftTools } from './CraftTools';
+// import { CraftTools } from './CraftTools';
 import { CraftRhythm } from './CraftRhythm';
 import { CraftTransition } from './CraftTransition';
 import { useIsomorphicLayoutEffect, withMotion, EASE, DURATION } from '../../animations';
@@ -33,10 +33,10 @@ export function Craft() {
           }
         });
         
-        // Very soft opacity, very small vertical movement. Visual -> Text.
+        // Very soft opacity and percentage-based vertical movement to avoid parallax conflict.
         tlIntro.fromTo(qIntro('.craft-intro-visual'),
-          { opacity: 0, y: 15 },
-          { opacity: 1, y: 0, duration: DURATION.slower, ease: EASE.default }
+          { opacity: 0, yPercent: 5 },
+          { opacity: 1, yPercent: 0, duration: DURATION.slower, ease: EASE.default }
         )
         .fromTo(qIntro('.craft-intro-caption'),
           { opacity: 0 },
@@ -62,8 +62,8 @@ export function Craft() {
           });
           
           tl.fromTo(qBlock('.craft-gesture-visual'),
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, duration: DURATION.slower, ease: EASE.default }
+            { opacity: 0, yPercent: 5 },
+            { opacity: 1, yPercent: 0, duration: DURATION.slower, ease: EASE.default }
           )
           .fromTo(qBlock('.craft-gesture-caption'),
             { opacity: 0 },
@@ -76,8 +76,8 @@ export function Craft() {
             "-=0.2"
           );
           
-          // Midground parallax drag
-          gsap.to(qBlock('.craft-gesture-visual'), {
+          // Midground parallax drag: animate both visual and caption so they don't overlap
+          gsap.to(qBlock('.craft-gesture-visual, .craft-gesture-caption'), {
             y: 40,
             ease: 'none',
             scrollTrigger: {
@@ -146,8 +146,8 @@ export function Craft() {
           });
 
           tl.fromTo(qBlock('.craft-rhythm-visual'),
-            { opacity: 0, y: 15 },
-            { opacity: 1, y: 0, duration: DURATION.slower, ease: EASE.default }
+            { opacity: 0, yPercent: 5 },
+            { opacity: 1, yPercent: 0, duration: DURATION.slower, ease: EASE.default }
           )
           .fromTo(qBlock('.craft-rhythm-caption'),
             { opacity: 0 },
@@ -155,7 +155,7 @@ export function Craft() {
             "-=0.4"
           );
 
-          gsap.to(qBlock('.craft-rhythm-visual'), {
+          gsap.to(qBlock('.craft-rhythm-visual, .craft-rhythm-caption'), {
             y: 40,
             ease: 'none',
             scrollTrigger: {
@@ -212,11 +212,11 @@ export function Craft() {
   }, []);
 
   return (
-    <Section id="craft" className="relative bg-background text-text overflow-hidden pt-0 pb-24 lg:pb-32">
+    <Section id="craft" className="relative text-text overflow-hidden pt-0 pb-24 lg:pb-32">
       <div ref={scopeRef}>
         <CraftIntro ref={introRef} />
         <CraftGesture ref={gestureRef} />
-        <CraftTools ref={toolsRef} />
+        {/* <CraftTools ref={toolsRef} /> */}
         <CraftRhythm ref={rhythmRef} />
         <CraftTransition ref={transitionRef} />
       </div>

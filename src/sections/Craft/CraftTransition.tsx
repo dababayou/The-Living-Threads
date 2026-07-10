@@ -13,7 +13,7 @@ export const CraftTransition = forwardRef<HTMLDivElement>((_, ref) => {
         <div className="craft-transition-threshold w-full max-w-xs lg:max-w-sm aspect-[3/4] relative mb-24 mx-auto">
           <div className="craft-transition-stack-back absolute inset-0 bg-surface border border-border shadow-sm transform -rotate-3 transition-transform"></div>
           <div className="craft-transition-stack-mid absolute inset-0 bg-[#e3dfd7] border border-[#d3cdc2] shadow-sm transform rotate-2 transition-transform"></div>
-          <div className="craft-transition-stack-front absolute inset-0 bg-surface border border-border flex items-end justify-center pb-8 shadow-md transition-transform relative z-10">
+          <div className="craft-transition-stack-front absolute inset-0 bg-surface border border-border flex items-center justify-center pt-3 pb-3 shadow-md transition-transform relative z-10">
             <span className="text-text-muted font-body text-xs uppercase tracking-widest opacity-80">
               Prepared Material
             </span>

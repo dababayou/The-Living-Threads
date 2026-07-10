@@ -125,7 +125,7 @@ export function LivingHeritage() {
   }, []);
 
   return (
-    <Section id="living-heritage" className="relative bg-background text-text overflow-hidden py-0">
+    <Section id="living-heritage" className="relative text-text overflow-hidden py-0">
       <div ref={scopeRef}>
         <LivingHeritagePresence ref={presenceRef} />
         <LivingHeritageConnection ref={connectionRef} />

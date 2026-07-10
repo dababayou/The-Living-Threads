@@ -101,7 +101,7 @@ export function Hope() {
   }, []);
 
   return (
-    <Section id="hope" className="relative bg-background text-text overflow-hidden py-0">
+    <Section id="hope" className="relative text-text overflow-hidden py-0">
       <div ref={scopeRef}>
         <HopePresence ref={presenceRef} />
         <HopeRelease ref={releaseRef} />
