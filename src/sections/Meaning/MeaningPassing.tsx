@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
+import passing from '../../assets/images/passing.jpg';
 
 export const MeaningPassing = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -19,7 +20,9 @@ export const MeaningPassing = forwardRef<HTMLDivElement>((_, ref) => {
             </Text>
           </div>
           
-          <div className="meaning-passing-visual w-full max-w-sm aspect-[2/3] bg-gradient-to-br from-[#c8c4bc] to-surface shadow-sm rounded-sm opacity-90"></div>
+          <div className="meaning-passing-visual w-full max-w-sm aspect-[2/3] shadow-sm rounded-sm opacity-95 overflow-hidden">
+            <img src={passing} alt="Carrying the threads today" className="w-full h-full object-cover" />
+          </div>
           
         </div>
       </Container>

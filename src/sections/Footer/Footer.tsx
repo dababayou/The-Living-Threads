@@ -1,15 +1,14 @@
-import { forwardRef } from 'react';
 import { Section, Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
 import footbc from '../../assets/images/footbc.png';
 
-export const Footer = forwardRef<HTMLDivElement>((_, ref) => {
+export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <Section id="footer" className="relative pt-32 lg:pt-48 pb-16 text-text overflow-hidden" ref={ref}>
+    <Section id="footer" className="relative pt-32 lg:pt-48 pb-16 text-text overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img 
@@ -51,6 +50,4 @@ export const Footer = forwardRef<HTMLDivElement>((_, ref) => {
       </Container>
     </Section>
   );
-});
-
-Footer.displayName = 'Footer';
+}

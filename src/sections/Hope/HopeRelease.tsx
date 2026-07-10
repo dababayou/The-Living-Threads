@@ -1,6 +1,8 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
+import release1 from '../../assets/images/rele1.jpg';
+import release2 from '../../assets/images/release2.jpg';
 
 export const HopeRelease = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -16,9 +18,13 @@ export const HopeRelease = forwardRef<HTMLDivElement>((_, ref) => {
           */}
           <div className="w-full max-w-5xl mx-auto flex flex-col items-start lg:pl-16 mb-40 lg:mb-64">
             
-            <div className="hope-release-visual-wide w-full aspect-[21/9] bg-gradient-to-r from-surface to-[#dcd9d2] opacity-75 mb-32 lg:mb-56"></div>
+            <div className="hope-release-visual-wide w-full aspect-[21/9] shadow-sm mb-32 lg:mb-56 overflow-hidden">
+              <img src={release1} alt="Release landscape" className="w-full h-full object-cover" />
+            </div>
             
-            <div className="hope-release-visual-small w-full max-w-sm aspect-square bg-gradient-to-b from-[#e3dfd7] to-surface opacity-70 lg:ml-auto lg:mr-24"></div>
+            <div className="hope-release-visual-small w-full max-w-sm aspect-square shadow-sm lg:ml-auto lg:mr-24 overflow-hidden">
+              <img src={release2} alt="Release detail" className="w-full h-full object-cover" />
+            </div>
             
           </div>
 

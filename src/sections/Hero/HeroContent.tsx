@@ -29,7 +29,7 @@ export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
           variant="body" 
           className="uppercase tracking-wider text-sm opacity-80"
         >
-          Begin the journey.
+          The Journey Begins.
         </Text>
       </div>
     </div>

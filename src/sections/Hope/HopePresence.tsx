@@ -1,6 +1,8 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
+import hope1ini from '../../assets/images/hope1ini.jpg';
+import hope2 from '../../assets/images/hope2.jpg';
 
 export const HopePresence = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -15,9 +17,13 @@ export const HopePresence = forwardRef<HTMLDivElement>((_, ref) => {
             No overlapping. Typography separated vertically.
           */}
           
-          <div className="hope-presence-visual-primary w-full max-w-lg aspect-[3/4] bg-gradient-to-br from-[#dcd9d2] to-surface shadow-sm opacity-85 mb-24 lg:mb-40"></div>
+          <div className="hope-presence-visual-primary w-full max-w-lg aspect-[3/4] shadow-sm mb-24 lg:mb-40 overflow-hidden">
+            <img src={hope1ini} alt="Presence" className="w-full h-full object-cover" />
+          </div>
           
-          <div className="hope-presence-visual-secondary w-full max-w-3xl aspect-[16/9] bg-gradient-to-t from-surface to-[#d3cdc2] shadow-sm opacity-80 mb-32 lg:mb-48"></div>
+          <div className="hope-presence-visual-secondary w-full max-w-3xl aspect-[16/9] shadow-sm mb-32 lg:mb-48 overflow-hidden">
+            <img src={hope2} alt="Continuation" className="w-full h-full object-cover" />
+          </div>
 
           <div className="hope-presence-text max-w-2xl text-center mx-auto">
             <Text variant="body" className="text-xl lg:text-2xl leading-loose font-light opacity-90">

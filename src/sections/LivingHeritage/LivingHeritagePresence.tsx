@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
+import presence from '../../assets/images/presence.jpg';
 
 export const LivingHeritagePresence = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -11,7 +12,9 @@ export const LivingHeritagePresence = forwardRef<HTMLDivElement>((_, ref) => {
             Presence: Medium-scale environmental portrait.
             Eye-level. Posture implies unseen presence.
           */}
-          <div className="living-presence-visual w-full max-w-xl aspect-[4/5] bg-gradient-to-tr from-[#dcd9d2] to-surface shadow-sm rounded-sm mb-24 lg:mb-32"></div>
+          <div className="living-presence-visual w-full max-w-xl aspect-[4/5] shadow-sm rounded-sm mb-24 lg:mb-32 overflow-hidden">
+            <img src={presence} alt="Tradition continues to be lived" className="w-full h-full object-cover cursor-pointer" />
+          </div>
           
           <div className="living-presence-text max-w-lg lg:ml-24">
             <Text variant="body" className="text-xl lg:text-2xl leading-loose text-text-muted">

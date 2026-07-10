@@ -68,10 +68,11 @@ export function GlobalThread() {
       const margin = w * 0.15;
       const nextX = margin + Math.random() * (w - margin * 2);
 
+      const actualHeight = nextY - currentY;
       const cp1X = currentX;
-      const cp1Y = currentY + segmentHeight * (0.4 + Math.random() * 0.2);
+      const cp1Y = currentY + actualHeight * (0.4 + Math.random() * 0.2);
       const cp2X = nextX;
-      const cp2Y = nextY - segmentHeight * (0.4 + Math.random() * 0.2);
+      const cp2Y = nextY - actualHeight * (0.4 + Math.random() * 0.2);
 
       segs.push({
         d: `M ${currentX} ${currentY} C ${cp1X} ${cp1Y}, ${cp2X} ${cp2Y}, ${nextX} ${nextY}`,

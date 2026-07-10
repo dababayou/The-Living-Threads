@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
+import invit from '../../assets/images/invit.jpg';
 
 export const LivingHeritageInvitation = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -18,7 +19,9 @@ export const LivingHeritageInvitation = forwardRef<HTMLDivElement>((_, ref) => {
             </Text>
           </div>
           
-          <div className="living-invitation-visual w-full max-w-sm lg:w-1/2 aspect-[2/3] bg-gradient-to-b from-[#e3dfd7] to-surface shadow-sm rounded-sm order-1 lg:order-2"></div>
+          <div className="living-invitation-visual w-full max-w-sm lg:w-1/2 aspect-[2/3] shadow-sm rounded-sm order-1 lg:order-2 overflow-hidden">
+            <img src={invit} alt="The stories our children will wear" className="w-full h-full object-cover" />
+          </div>
           
         </div>
       </Container>

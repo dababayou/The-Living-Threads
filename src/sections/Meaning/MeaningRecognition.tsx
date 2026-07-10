@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
+import recog from '../../assets/images/recog.jpg';
 
 export const MeaningRecognition = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -19,7 +20,9 @@ export const MeaningRecognition = forwardRef<HTMLDivElement>((_, ref) => {
             </Text>
           </div>
           
-          <div className="meaning-recognition-visual aspect-square w-48 lg:w-64 bg-gradient-to-b from-[#e3dfd7] to-surface shadow-sm rounded-sm opacity-75 mb-32 lg:mb-64"></div>
+          <div className="meaning-recognition-visual aspect-square w-48 lg:w-64 shadow-sm rounded-sm opacity-95 mb-32 lg:mb-64 overflow-hidden">
+            <img src={recog} alt="Connection" className="w-full h-full object-cover" />
+          </div>
           
           <div className="meaning-recognition-text max-w-2xl mx-auto">
             <Text variant="body" className="text-2xl lg:text-3xl leading-loose font-light opacity-90">
