@@ -6,11 +6,11 @@
   --palette-gold: #d4af37;
 
   /* Foundation Colors (Functional UI roles) */
-  --color-background: #ffffff;
-  --color-surface: #fafafa;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6b6b;
-  --color-border: #e5e5e5;
+  --color-background: #EEE9E0;
+  --color-surface: #E8E2D7;
+  --color-text: #241813;
+  --color-text-muted: #8E422A;
+  --color-border: #D8D0C3;
 
   /* Layout */
   --container-max: 1280px;
