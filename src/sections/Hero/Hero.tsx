@@ -5,7 +5,7 @@ import { Section, Container } from '../../components/layout';
 import { HeroContent, HeroNarrative } from './HeroContent';
 import { ScrollIndicator } from './ScrollIndicator';
 import { useIsomorphicLayoutEffect, withMotion, EASE, DURATION } from '../../animations';
-import hrobru from '../../assets/images/hrobru.png';
+import hrobru from '../../assets/images/hrobru.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import { Container } from '../../components/layout';
 import { Text } from '../../components/typography';
-import release1 from '../../assets/images/rele1.jpg';
+import release1 from '../../assets/images/rele1.webp';
 import release2 from '../../assets/images/release2.jpg';
 
 export const HopeRelease = forwardRef<HTMLDivElement>((_, ref) => {

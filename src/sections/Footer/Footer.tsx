@@ -1,7 +1,7 @@
 import { Section, Container } from '../../components/layout';
 import { Heading, Text } from '../../components/typography';
 import { useLanguage } from '../../contexts/LanguageContext';
-import footbc from '../../assets/images/footbc.png';
+import footbc from '../../assets/images/footbc.webp';
 
 export function Footer() {
   const { t } = useLanguage();

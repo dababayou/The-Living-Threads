@@ -1,90 +1,88 @@
-# The Living Threads
+# TENUNA: The Living Threads 🪡✨
 
-*An Interactive Editorial Documentary & Cultural Digital Initiative exploring Sumba Ikat*
+**An Interactive Editorial Documentary & Cultural Digital Initiative exploring Sumba Ikat**
+
+[![Live Demo](https://img.shields.io/badge/View%20Live%20Demo-TENUNA-8A3324?style=for-the-badge&logo=vercel)](https://dababayou.github.io/The-Living-Threads/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](#)
+[![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](#)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)
+[![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](#)
 
 ---
 
-**The Living Threads** adalah sebuah website dokumenter editorial interaktif yang dirancang sebagai ruang apresiasi digital untuk menjaga, merayakan, dan merenungkan warisan budaya tenun **Sumba Ikat**. Melalui perpaduan tata letak editorial yang bersih dan animasi berbasis waktu (GSAP ScrollTrigger), website ini mengajak pengunjung untuk memperlambat tempo membaca, mengamati detail proses pembuatan, dan mendalami filosofi spiritual di balik mahakarya leluhur Sumba.
+**TENUNA: The Living Threads** adalah sebuah website dokumenter editorial interaktif yang dirancang sebagai ruang apresiasi digital untuk menjaga, merayakan, dan merenungkan warisan budaya tenun **Sumba Ikat**. Melalui perpaduan tata letak editorial yang bersih dan animasi berbasis waktu (GSAP ScrollTrigger), website ini mengajak pengunjung untuk memperlambat tempo membaca, mengamati detail proses pembuatan, dan mendalami filosofi spiritual di balik mahakarya leluhur Sumba.
 
 Proyek ini dibangun sebagai representasi digital dari inisiatif pelestarian budaya yang mendukung **SDG 11: Kota dan Komunitas yang Berkelanjutan**, dengan cara mendokumentasikan pengetahuan tradisional (intangible cultural heritage) agar tetap relevan bagi generasi mendatang.
 
 ---
 
+## ✨ Fitur Utama (Key Features)
+
+*   **🌐 Sistem Multi-bahasa Terpusat (Bilingual Context):** Mendukung Bahasa Indonesia dan Bahasa Inggris yang diatur melalui *Context API* yang terpusat dan *Stack Switcher* interaktif (berbasis bendera).
+*   **📜 Storytelling Imersif Berbasis Scroll:** Penggunaan GSAP dan ScrollTrigger mengontrol transisi masuk elemen tulisan, efek *parallax*, serta pemudaran gambar latar secara tersinkronisasi dan elegan seiring laju *scroll*.
+*   **🧵 Global Thread SVG Animation:** Elemen visual benang dinamis yang terus membentang dari awal hingga akhir halaman, berubah ketebalan, warna (mengkudu), dan pola (ikat), merepresentasikan perjalanan sehelai kapas menjadi kain.
+*   **🍱 Bento Grid UI (Meaning Section):** Layout modern eksplorasi filosofi motif utama tenun Sumba (Ruha, Habaku) melalui grid asimetris yang rapi dan kartu pop-up detail interaktif.
+*   **⚡ Optimasi Performa (WebP & Jitter Fix):** Gambar-gambar beresolusi tinggi (ratusan megapiksel) telah dikompresi menggunakan format `.webp` yang sangat ringan, memastikan *First Contentful Paint* (FCP) yang instan. Masalah pergeseran *layout (Layout Shift)* pada transisi telah dieliminasi.
+
+---
+
 ## 📖 Alur Narasi (Narrative Structure)
 
-Website ini dirancang mengalir secara linier tanpa interupsi navigasi yang mengganggu konsentrasi pembaca. Seluruh perjalanan terbagi menjadi enam bab utama:
+Website ini dirancang mengalir secara linier tanpa interupsi navigasi yang mengganggu konsentrasi pembaca. 
 
-1.  **Hero (Framing & Opening):** Pengenalan awal inisiatif digital pelestarian tenun dan penegasan judul utama sebelum pengunjung memulai perjalanan editorial.
-2.  **Nature (Origin of Material):** Mengamati proses paling awal di mana alam menyediakan serat kapas dan tanaman pewarna organik (seperti tarum dan mengkudu) yang diproses secara sabar.
+1.  **Hero (Framing & Opening):** Pengenalan awal inisiatif digital pelestarian tenun dan penegasan judul utama, dengan efek *scrim glow* memukau yang menyinari teks di atas *background* imersif.
+2.  **Nature (Origin of Material):** Mengamati proses paling awal di mana alam menyediakan serat kapas dan tanaman pewarna organik yang diproses secara sabar.
 3.  **Craft (The Process of Weaving):** Visualisasi gerakan tangan penenun saat memilin benang dan mengoperasikan alat tenun tradisional, menonjolkan energi fisik dari kerja keras manusia.
-4.  **Meaning (Philosophical Silence):** Bab kontemplatif yang mengajak pengunjung melihat motif tenun secara detail untuk memahami hubungan spiritual antara penenun, alam semesta, dan leluhur.
-5.  **Living Heritage (Generational Bond):** Potret nyata bagaimana pengetahuan menenun ini ditransfer dari generasi tua ke generasi muda melalui rasa percaya dan observasi harian.
-6.  **Hope (Ending Without Ending):** Penutup dokumenter yang memudarkan batas visual gambar menjadi ruang putih tanpa akhir, melepaskan pembaca kembali ke rutinitas harian dengan refleksi mendalam.
+4.  **Meaning (Philosophical Silence):** Mengeksplorasi makna setiap goresan motif tenun melalui kartu interaktif dalam struktur *Bento Grid*.
+5.  **Living Heritage & Hope:** Potret nyata bagaimana pengetahuan menenun ini ditransfer antar-generasi, dilengkapi dengan video dokumenter lapangan eksklusif.
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan (Tech Stack)
 
-*   **Framework Utama:** [React 19](https://react.dev/) dengan [TypeScript](https://www.typescriptlang.org/)
-*   **Alat Pengembangan & Build:** [Vite 8](https://vite.dev/)
-*   **Tata Letak & Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-*   **Sistem Animasi & Scroll:** [GSAP (GreenSock)](https://gsap.com/) & [ScrollTrigger](https://gsap.com/scrolltrigger)
-*   **Kualitas Kode:** [Oxlint](https://oxc.rs/)
+*   **Core Framework:** [React 19](https://react.dev/) dengan [TypeScript](https://www.typescriptlang.org/)
+*   **Build Tool:** [Vite 8](https://vite.dev/)
+*   **Styling Engine:** [Tailwind CSS v4](https://tailwindcss.com/)
+*   **Animation Engine:** [GSAP](https://gsap.com/) & ScrollTrigger
+*   **Micro-interactions:** [Framer Motion](https://motion.dev/) (Untuk efek lempar kartu interaktif)
+*   **Documentation:** *Playwright* & Node.js scripts untuk ekstraksi otomatis PDF dokumentasi.
 
 ---
 
-## 🚀 Panduan Menjalankan Project (How to Run)
+## 🚀 Panduan Menjalankan Project Lokal (How to Run)
 
-Karena proyek ini menggunakan React dan memiliki tahapan kompilasi, ikuti langkah-langkah di bawah ini untuk menjalankannya secara lokal:
+Ikuti langkah-langkah di bawah ini untuk menjalankan repositori ini secara lokal:
 
-### 1. Prasyarat (Prerequisites)
-Pastikan komputer Anda telah terinstal **Node.js** (rekomendasi versi 18 ke atas) dan paket manajer **npm**. Cek instalasi dengan perintah:
+### 1. Prasyarat
+Pastikan komputer Anda telah terinstal **Node.js** (rekomendasi versi 18 ke atas) dan paket manajer **npm**.
 ```bash
 node -v
 npm -v
 ```
 
-### 2. Mengunduh Dependensi
-Buka terminal pada direktori root proyek ini, kemudian jalankan perintah untuk mengunduh semua modul yang diperlukan:
+### 2. Instalasi & Menjalankan
+Buka terminal pada direktori root proyek ini, kemudian jalankan:
 ```bash
+# Mengunduh semua dependensi
 npm install
-```
 
-### 3. Menjalankan Server Pengembangan (Local Development)
-Untuk menjalankan website dalam mode pengembangan lokal dengan fitur *Hot Module Replacement* (HMR), jalankan perintah:
-```bash
+# Menjalankan server pengembangan (Local Development)
 npm run dev
 ```
-Setelah aktif, silakan buka peramban (*browser*) Anda dan akses alamat lokal yang muncul di terminal (default: `http://localhost:5173`).
+Setelah aktif, silakan buka *browser* Anda pada alamat `http://localhost:5173`.
 
-### 4. Membangun Berkas Produksi (Production Build)
-Untuk melakukan kompilasi kode TypeScript dan mengoptimalkan aset-aset statis ke dalam folder siap pakai, jalankan perintah:
+### 3. Membangun Berkas Produksi (Production Build)
+Untuk melakukan kompilasi kode TypeScript dan mengoptimalkan aset untuk *deploy*:
 ```bash
 npm run build
 ```
-Perintah ini akan menghasilkan direktori `/dist` berisi berkas HTML, CSS, dan JavaScript statis yang siap dideploy ke berbagai layanan hosting statis (Vercel, Netlify, GitHub Pages, dll.).
-
-### 5. Menguji Hasil Build Secara Lokal
-Anda dapat mempratinjau hasil build produksi secara lokal untuk menguji performa dan kesesuaian aset sebelum benar-benar dideploy dengan menjalankan perintah:
-```bash
-npm run preview
-```
 
 ---
 
-## 📂 Struktur Direktori Proyek
-
-*   `/src/app`: Mengoordinasikan seluruh alur halaman dan memuat komponen utama (`App.tsx`).
-*   `/src/components`: Komponen modular dasar yang digunakan berulang kali:
-    *   `layout`: Manajemen struktur section statis (`Section`) dan batas container (`Container`).
-    *   `typography`: Sistem tipografi yang konsisten (`Heading`, `Text`, `Prose`).
-*   `/src/sections`: Modul-modul bab dokumenter (`Hero`, `Nature`, `Craft`, `Meaning`, `LivingHeritage`, `Hope`).
-*   `/src/animations`: Logika konfigurasi GSAP, *smooth scrolling*, dan manajemen performa animasi.
+## 📂 Dokumentasi Pembuatan (PDF & DOCX)
+Semua dokumen persyaratan berupa wireframe, konsep, alur kerja situs, dan detail fungsi telah disatukan di dalam folder `/docs` pada root repositori ini dengan nama **`Dokumentasi_Pembuatan_TENUNA_Fin.pdf`** dan file DOCX-nya.
 
 ---
 
-## ♿ Optimalisasi Aksesibilitas & Performa
-
-*   **Dukungan Reduced Motion:** Sistem animasi secara otomatis dinonaktifkan jika sistem operasi pengguna mengaktifkan opsi *Reduced Motion* demi menjaga kenyamanan aksesibilitas bagi semua pengguna.
-*   **Semantic HTML:** Kerangka dokumen disusun dengan struktur HTML5 semantik (`<main>`, `<section>`, `<h1>`, `<h2>`, dan `<p>`) guna memastikan pembaca layar (*screen reader*) dapat melacak struktur informasi dengan benar.
-*   **Pencegahan CLS (Cumulative Layout Shift):** Setiap wadah gambar dan media penampung dirancang menggunakan rasio aspek yang eksplisit sejak awal untuk menghindari lompatan konten ketika aset sedang dimuat.
+> *"Setiap benang menyimpan cerita, setiap pola berbicara tentang kosmos."* 
+> — **The Living Threads Initiative** 
