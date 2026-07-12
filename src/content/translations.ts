@@ -1,7 +1,7 @@
 export const translations: Record<string, Record<string, string>> = {
   id: {
     "Pulling the raw fiber.": "Menarik serat mentah.",
-    "Resistance is met with steady force. The hands do not rush; they negotiate with the material, sensing its tension and yielding when necessary.": "Perlawanan dihadapi dengan tenaga yang stabil. Tangan tidak terburu-buru; mereka bernegosiasi dengan material, merasakan ketegangannya dan mengalah saat diperlukan.",
+    "Resistance is met with steady force. The hands do not rush, but they negotiate with the material, sensing its tension and yielding when necessary.": "Kekusutan benang dihadapi dengan kesabaran. Tangan tidak terburu-buru, tetapi mereka bernegosiasi dengan material, merasakan ketegangannya dan mengalah saat diperlukan.",
     "A deliberate twist introduces strength. Hundreds of identical motions accumulate to transform fragility into resilience.": "Putaran yang disengaja memberikan kekuatan. Ratusan gerakan identik terakumulasi mengubah kerapuhan menjadi ketahanan.",
     "Twisting motion between thumb and index.": "Gerakan memutar antara ibu jari dan telunjuk.",
     "The quiet intelligence of the hand.": "Kecerdasan hening dari sepasang tangan.",

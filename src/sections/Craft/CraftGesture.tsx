@@ -21,7 +21,7 @@ export const CraftGesture = forwardRef<HTMLDivElement>((_, ref) => {
             <div className="craft-gesture-text lg:col-span-5 lg:col-start-7 lg:-mt-32 relative z-20 order-2">
               <div className="bg-background/95 backdrop-blur-md p-8 lg:p-12 border border-border shadow-sm">
                 <Text variant="body" className="text-lg leading-relaxed">
-                  Resistance is met with steady force. The hands do not rush; they negotiate with the material, sensing its tension and yielding when necessary.
+                  Resistance is met with steady force. The hands do not rush, but they negotiate with the material, sensing its tension and yielding when necessary.
                 </Text>
               </div>
             </div>
