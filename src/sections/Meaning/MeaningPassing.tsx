@@ -21,7 +21,7 @@ export const MeaningPassing = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
           
           <div className="meaning-passing-visual w-full max-w-sm aspect-[2/3] shadow-sm rounded-sm opacity-95 overflow-hidden">
-            <img src={passing} alt="Carrying the threads today" className="w-full h-full object-cover" />
+            <img loading="lazy" src={passing} alt="Carrying the threads today" className="w-full h-full object-cover" />
           </div>
           
         </div>

@@ -15,7 +15,7 @@ export const HopeBeyond = forwardRef<HTMLDivElement>((_, ref) => {
             Vast surrounding whitespace. No visual competition.
           */}
           <div className="hope-beyond-visual w-full max-w-6xl aspect-[24/9] lg:aspect-[28/9] opacity-80 mb-64 lg:mb-96 overflow-hidden">
-            <img src={horizon} alt="The horizon" className="w-full h-full object-cover" />
+            <img loading="lazy" src={horizon} alt="The horizon" className="w-full h-full object-cover" />
           </div>
 
           <div className="hope-beyond-text max-w-lg text-center mx-auto">

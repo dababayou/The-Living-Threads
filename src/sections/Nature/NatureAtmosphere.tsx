@@ -4,7 +4,7 @@ import wairindingImg from '../../assets/images/bukit-wairinding.webp';
 export const NatureAtmosphere = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div ref={ref} className="w-full min-h-[70vh] lg:min-h-[100vh] flex flex-col justify-end items-center p-8 lg:p-16 mb-0 overflow-hidden relative">
-      <img 
+      <img loading="lazy" 
         src={wairindingImg} 
         alt="Bukit Wairinding Landscape" 
         className="nature-atmosphere-bg absolute inset-0 w-full h-full object-cover origin-bottom" 

@@ -20,7 +20,7 @@ export const LivingHeritageInvitation = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
           
           <div className="living-invitation-visual w-full max-w-sm lg:w-1/2 aspect-[2/3] shadow-sm rounded-sm order-1 lg:order-2 overflow-hidden">
-            <img src={invit} alt="The stories our children will wear" className="w-full h-full object-cover" />
+            <img loading="lazy" src={invit} alt="The stories our children will wear" className="w-full h-full object-cover" />
           </div>
           
         </div>

@@ -77,7 +77,7 @@ export function Hero() {
         ref={bgRef} 
         className="absolute inset-0 z-[-1] pointer-events-none opacity-0"
       >
-        <img 
+        <img loading="lazy" 
           src={hrobru} 
           alt="Hero Background" 
           className="w-full h-full object-cover" 

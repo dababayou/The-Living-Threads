@@ -16,7 +16,7 @@ export const MeaningLookAgain = forwardRef<HTMLDivElement>((_, ref) => {
         */}
         <div className="meaning-look-block w-full max-w-4xl mx-auto mb-48 lg:mb-72">
           <div className="meaning-look-visual w-full aspect-[16/9] shadow-sm rounded-sm opacity-95 mb-24 lg:mb-32 overflow-hidden">
-            <img src={look1} alt="Every thread carries intention" className="w-full h-full object-cover cursor-pointer" />
+            <img loading="lazy" src={look1} alt="Every thread carries intention" className="w-full h-full object-cover cursor-pointer" />
           </div>
           <div className="meaning-look-text max-w-md lg:ml-auto lg:mr-24 lg:text-right">
             <Text variant="body" className="text-xl leading-loose text-text-muted">
@@ -32,7 +32,7 @@ export const MeaningLookAgain = forwardRef<HTMLDivElement>((_, ref) => {
             </Text>
           </div>
           <div className="meaning-look-visual w-full max-w-sm aspect-[3/4] shadow-sm rounded-sm opacity-95 lg:ml-32 overflow-hidden">
-            <img src={look2} alt="A vessel for relationships" className="w-full h-full object-cover cursor-pointer" />
+            <img loading="lazy" src={look2} alt="A vessel for relationships" className="w-full h-full object-cover cursor-pointer" />
           </div>
         </div>
 

@@ -19,11 +19,11 @@ export const HopeRelease = forwardRef<HTMLDivElement>((_, ref) => {
           <div className="w-full max-w-5xl mx-auto flex flex-col items-start lg:pl-16 mb-40 lg:mb-64">
             
             <div className="hope-release-visual-wide w-full aspect-[21/9] shadow-sm mb-32 lg:mb-56 overflow-hidden">
-              <img src={release1} alt="Release landscape" className="w-full h-full object-cover" />
+              <img loading="lazy" src={release1} alt="Release landscape" className="w-full h-full object-cover" />
             </div>
             
             <div className="hope-release-visual-small w-full max-w-sm aspect-square shadow-sm lg:ml-auto lg:mr-24 overflow-hidden">
-              <img src={release2} alt="Release detail" className="w-full h-full object-cover" />
+              <img loading="lazy" src={release2} alt="Release detail" className="w-full h-full object-cover" />
             </div>
             
           </div>

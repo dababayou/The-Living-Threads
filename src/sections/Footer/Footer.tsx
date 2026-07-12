@@ -18,7 +18,7 @@ export function Footer() {
       <Section id="footer" className="relative pt-32 lg:pt-48 pb-16 text-text overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 pointer-events-none">
-          <img 
+          <img loading="lazy" 
             src={footbc} 
             alt="Footer background" 
             className="w-full h-full object-cover object-center opacity-100" 
@@ -49,7 +49,7 @@ export function Footer() {
           </div>
 
           <div className="border-t border-border/50 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-xs tracking-wide text-text-muted uppercase relative z-10">
-            <div>© {new Date().getFullYear()} TENUNA: The Living Threads</div>
+            <div>Â© {new Date().getFullYear()} TENUNA: The Living Threads</div>
             <div className="flex gap-8">
               {/* <span className="hover:text-text cursor-pointer transition-colors">{t('Instagram')}</span> */}
               {/* <span className="hover:text-text cursor-pointer transition-colors">{t('Exhibition')}</span> */}

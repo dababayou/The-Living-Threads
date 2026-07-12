@@ -16,10 +16,10 @@ export const CraftTransition = forwardRef<HTMLDivElement>((_, ref) => {
         
         <div className="craft-transition-threshold w-full max-w-xs lg:max-w-sm aspect-[3/4] relative mb-24 mx-auto group cursor-pointer">
           <div className="craft-transition-stack-back absolute inset-0 bg-white border border-border shadow-sm transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 p-2 sm:p-3">
-            <img src={ntrtrs} alt="" className="w-full h-full object-cover opacity-80 grayscale-[30%]" />
+            <img loading="lazy" src={ntrtrs} alt="Tightly bound threads ready for dyeing" className="w-full h-full object-cover opacity-80 grayscale-[30%]" />
           </div>
           <div className="craft-transition-stack-mid absolute inset-0 bg-white border border-[#d3cdc2] shadow-sm transform rotate-2 group-hover:rotate-6 transition-transform duration-500 p-2 sm:p-3">
-            <img src={ntrtrs} alt="" className="w-full h-full object-cover" />
+            <img loading="lazy" src={ntrtrs} alt="Tightly bound threads ready for dyeing (Layer 2)" className="w-full h-full object-cover" />
           </div>
           <div className="craft-transition-stack-front absolute inset-0 bg-[#f9f7f3] border border-border flex items-start justify-center pt-3 pb-3 shadow-md transition-transform relative z-10">
             <span className="text-text-muted font-body text-xs uppercase tracking-widest opacity-80 mt-2">

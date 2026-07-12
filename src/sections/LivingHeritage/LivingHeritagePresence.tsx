@@ -13,7 +13,7 @@ export const LivingHeritagePresence = forwardRef<HTMLDivElement>((_, ref) => {
             Eye-level. Posture implies unseen presence.
           */}
           <div className="living-presence-visual w-full max-w-xl aspect-[4/5] shadow-sm rounded-sm mb-24 lg:mb-32 overflow-hidden">
-            <img src={presence} alt="Tradition continues to be lived" className="w-full h-full object-cover cursor-pointer" />
+            <img loading="lazy" src={presence} alt="Tradition continues to be lived" className="w-full h-full object-cover cursor-pointer" />
           </div>
           
           <div className="living-presence-text max-w-lg lg:ml-24">

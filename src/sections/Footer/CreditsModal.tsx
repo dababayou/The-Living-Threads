@@ -26,7 +26,7 @@ const creditsData: CreditItem[] = [
     url: 'https://naturaldyestore.com/',
     details: {
       description: { 
-        text: 'Nature Materials – Organic Pigment Settling in Water', 
+        text: 'Nature Materials â€“ Organic Pigment Settling in Water', 
         url: 'https://blog.naturaldyestore.com/wp-content/uploads/2025/09/890544_40832ab1e09045e8b63bd40339befa2cmv2-1024x768.webp' 
       },
       owner: 'Suzanne Dekel',

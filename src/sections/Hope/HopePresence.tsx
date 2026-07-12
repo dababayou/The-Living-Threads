@@ -18,11 +18,11 @@ export const HopePresence = forwardRef<HTMLDivElement>((_, ref) => {
           */}
           
           <div className="hope-presence-visual-primary w-full max-w-lg aspect-[3/4] shadow-sm mb-24 lg:mb-40 overflow-hidden">
-            <img src={hope1ini} alt="Presence" className="w-full h-full object-cover" />
+            <img loading="lazy" src={hope1ini} alt="Presence" className="w-full h-full object-cover" />
           </div>
           
           <div className="hope-presence-visual-secondary w-full max-w-3xl aspect-[16/9] shadow-sm mb-32 lg:mb-48 overflow-hidden">
-            <img src={hope2} alt="Continuation" className="w-full h-full object-cover" />
+            <img loading="lazy" src={hope2} alt="Continuation" className="w-full h-full object-cover" />
           </div>
 
           <div className="hope-presence-text max-w-2xl text-center mx-auto">

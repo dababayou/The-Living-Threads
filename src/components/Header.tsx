@@ -28,7 +28,14 @@ export function Header() {
         TENUNA: The Living Threads
       </div>
       
-      <div className="pointer-events-auto" style={{ width: 40, height: 28 }}>
+      <nav 
+        aria-label="Language selection" 
+        className="pointer-events-auto cursor-pointer" 
+        style={{ width: 40, height: 28 }}
+        role="button"
+        tabIndex={0}
+        aria-pressed="false"
+      >
         <Stack 
           cards={cards}
           randomRotation={true}
@@ -36,7 +43,7 @@ export function Header() {
           sendToBackOnClick={true}
           onTopCardChange={handleLanguageSwitch}
         />
-      </div>
+      </nav>
     </header>
   );
 }

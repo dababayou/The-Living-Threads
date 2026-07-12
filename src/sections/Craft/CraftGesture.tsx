@@ -13,7 +13,7 @@ export const CraftGesture = forwardRef<HTMLDivElement>((_, ref) => {
           {/* Gesture 1: Pulling */}
           <div className="craft-gesture-block grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center">
             <div className="lg:col-span-8 lg:col-start-1 relative z-10 order-1">
-              <img src={seratImg} alt="Pulling the raw fiber" className="craft-gesture-visual w-full aspect-[4/3] object-cover rounded-sm shadow-sm" />
+              <img loading="lazy" src={seratImg} alt="Pulling the raw fiber" className="craft-gesture-visual w-full aspect-[4/3] object-cover rounded-sm shadow-sm" />
               <Text variant="caption" className="craft-gesture-caption absolute -bottom-6 left-0 lg:left-12 text-text-muted italic">
                 Pulling the raw fiber.
               </Text>
@@ -37,7 +37,7 @@ export const CraftGesture = forwardRef<HTMLDivElement>((_, ref) => {
               </div>
             </div>
             <div className="lg:col-span-7 lg:col-start-6 relative z-10 order-1 lg:order-2">
-              <img src={putarImg} alt="Twisting motion between thumb and index" className="craft-gesture-visual w-full aspect-square lg:aspect-[4/5] max-h-[75vh] object-cover rounded-sm shadow-sm" />
+              <img loading="lazy" src={putarImg} alt="Twisting motion between thumb and index" className="craft-gesture-visual w-full aspect-square lg:aspect-[4/5] max-h-[75vh] object-cover rounded-sm shadow-sm" />
               <Text variant="caption" className="craft-gesture-caption absolute -bottom-8 right-0 lg:right-12 text-text-muted italic">
                 Twisting motion between thumb and index.
               </Text>

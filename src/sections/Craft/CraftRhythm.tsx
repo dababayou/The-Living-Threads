@@ -17,7 +17,7 @@ export const CraftRhythm = forwardRef<HTMLDivElement>((_, ref) => {
           
           {/* Cinematic Wide */}
           <div className="craft-rhythm-block w-full max-w-6xl mb-24 lg:mb-32 relative">
-             <img src={makingSumbaImg} alt="Repetitive tension applied to the loom" className="craft-rhythm-visual w-full aspect-video lg:aspect-[24/9] object-cover rounded-sm shadow-sm" />
+             <img loading="lazy" src={makingSumbaImg} alt="Repetitive tension applied to the loom" className="craft-rhythm-visual w-full aspect-video lg:aspect-[24/9] object-cover rounded-sm shadow-sm" />
              <Text variant="caption" className="craft-rhythm-caption absolute -bottom-8 right-0 lg:right-16 text-text-muted italic">Repetitive tension applied to the loom.</Text>
           </div>
         </div>

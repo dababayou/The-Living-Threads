@@ -21,7 +21,7 @@ export const MeaningRecognition = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
           
           <div className="meaning-recognition-visual aspect-square w-48 lg:w-64 shadow-sm rounded-sm opacity-95 mb-32 lg:mb-64 overflow-hidden">
-            <img src={recog} alt="Connection" className="w-full h-full object-cover" />
+            <img loading="lazy" src={recog} alt="Connection" className="w-full h-full object-cover" />
           </div>
           
           <div className="meaning-recognition-text max-w-2xl mx-auto">

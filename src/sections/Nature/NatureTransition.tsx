@@ -35,15 +35,15 @@ export const NatureTransition = forwardRef<HTMLDivElement>((_, ref) => {
         {/* Dense, structural threshold leading to Craft */}
         <div className="nature-transition-threshold mt-24 w-full aspect-[16/10] relative flex flex-col justify-end p-8 border border-[#d3cdc2] overflow-hidden">
            {/* Blurred background image outside the inner frame */}
-           <img 
+           <img loading="lazy" 
              src={ntrtrsImg} 
-             alt="" 
+             alt="Transition texture of natural fibers ready for dyeing" 
              className="absolute inset-0 w-full h-full object-cover blur-[6px] scale-[1.03] pointer-events-none" 
            />
            
            {/* Sharp foreground image aligned perfectly inside the inner frame */}
            <div className="absolute inset-4 overflow-hidden border border-[#d3cdc2]/50">
-             <img 
+             <img loading="lazy" 
                src={ntrtrsImg} 
                alt="Threshold of Craft" 
                className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] max-w-none object-cover" 
