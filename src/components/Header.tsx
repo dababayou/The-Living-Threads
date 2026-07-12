@@ -28,21 +28,22 @@ export function Header() {
         TENUNA: The Living Threads
       </div>
       
-      <nav 
-        aria-label="Language selection" 
-        className="pointer-events-auto cursor-pointer" 
-        style={{ width: 40, height: 28 }}
-        role="button"
-        tabIndex={0}
-        aria-pressed="false"
-      >
-        <Stack 
-          cards={cards}
-          randomRotation={true}
-          sensitivity={20}
-          sendToBackOnClick={true}
-          onTopCardChange={handleLanguageSwitch}
-        />
+      <nav aria-label="Language selection" className="pointer-events-auto cursor-pointer">
+        <button 
+          aria-label="Switch language"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style={{ width: 40, height: 28, display: 'block', background: 'transparent', border: 'none', padding: 0 }}
+          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-text rounded-sm"
+        >
+          <Stack 
+            cards={cards}
+            randomRotation={true}
+            sensitivity={20}
+            sendToBackOnClick={true}
+            onTopCardChange={handleLanguageSwitch}
+          />
+        </button>
       </nav>
     </header>
   );
