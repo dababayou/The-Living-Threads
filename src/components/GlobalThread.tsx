@@ -126,10 +126,10 @@ export function GlobalThread() {
   return (
     <div
       ref={containerRef}
-      className="absolute top-0 left-0 w-full pointer-events-none z-0"
+      className="absolute top-0 left-0 w-full pointer-events-none z-0 overflow-hidden"
       style={{ height: dimensions.h }}
     >
-      <svg width={dimensions.w} height={dimensions.h} className="w-full h-full">
+      <svg width={dimensions.w} height={dimensions.h} className="w-full h-full block">
         <defs>
           {/* Keeps the thread legible regardless of what's behind it —
               matters most for the pale raw stage on a white page */}

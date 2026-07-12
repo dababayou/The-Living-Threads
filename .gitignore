@@ -25,3 +25,6 @@ dist-ssr
 
 # Agent files & skills
 .agents
+
+# Internal planning docs
+src/docs/

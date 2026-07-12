@@ -22,6 +22,7 @@ Proyek ini dibangun sebagai representasi digital dari inisiatif pelestarian buda
 *   **📜 Storytelling Imersif Berbasis Scroll:** Penggunaan GSAP dan ScrollTrigger mengontrol transisi masuk elemen tulisan, efek *parallax*, serta pemudaran gambar latar secara tersinkronisasi dan elegan seiring laju *scroll*.
 *   **🧵 Global Thread SVG Animation:** Elemen visual benang dinamis yang terus membentang dari awal hingga akhir halaman, berubah ketebalan, warna (mengkudu), dan pola (ikat), merepresentasikan perjalanan sehelai kapas menjadi kain.
 *   **🍱 Bento Grid UI (Meaning Section):** Layout modern eksplorasi filosofi motif utama tenun Sumba (Ruha, Habaku) melalui grid asimetris yang rapi dan kartu pop-up detail interaktif.
+*   **🖼️ 3D Circular Gallery (WebGL):** Galeri motif interaktif yang memanfaatkan WebGL (OGL) untuk memberikan pengalaman visual 3D yang mulus, responsif, dan dapat diputar (*scroll/swipe*).
 *   **⚡ Optimasi Performa (WebP & Jitter Fix):** Gambar-gambar beresolusi tinggi (ratusan megapiksel) telah dikompresi menggunakan format `.webp` yang sangat ringan, memastikan *First Contentful Paint* (FCP) yang instan. Masalah pergeseran *layout (Layout Shift)* pada transisi telah dieliminasi.
 
 ---

@@ -183,10 +183,12 @@ class Title {
     });
     this.mesh = new Mesh(this.gl, { geometry, program });
     const aspect = width / height;
-    const textHeight = this.plane.scale.y * 0.15;
-    const textWidth = textHeight * aspect;
+    const textHeight = 0.15; // Base height relative to plane
+    // Apply inverse scale of the parent plane so the text retains its natural aspect ratio
+    const textWidth = (textHeight * aspect * this.plane.scale.y) / this.plane.scale.x;
+    
     this.mesh.scale.set(textWidth, textHeight, 1);
-    this.mesh.position.y = -this.plane.scale.y * 0.5 - textHeight * 0.5 - 0.05;
+    this.mesh.position.y = -0.5 - (textHeight * 0.5) - 0.05; // Offset below the plane
     this.mesh.setParent(this.plane);
   }
 }
@@ -348,12 +350,15 @@ class Media {
 
     const x = this.plane.position.x;
     const H = this.viewport.width / 2;
+    
+    const isMobile = this.screen && this.screen.width < 768;
+    const currentBend = isMobile ? 0 : this.bend;
 
-    if (this.bend === 0) {
+    if (currentBend === 0) {
       this.plane.position.y = 0;
       this.plane.rotation.z = 0;
     } else {
-      const B_abs = Math.abs(this.bend);
+      const B_abs = Math.abs(currentBend);
       const R = (H * H + B_abs * B_abs) / (2 * B_abs);
       
       // Allow the curve to continue wrapping around the circle bounds 
@@ -361,7 +366,7 @@ class Media {
       const effectiveX = Math.min(Math.abs(x), R * 0.99);
 
       const arc = R - Math.sqrt(R * R - effectiveX * effectiveX);
-      if (this.bend > 0) {
+      if (currentBend > 0) {
         this.plane.position.y = -arc;
         this.plane.rotation.z = -Math.sign(x) * Math.asin(effectiveX / R);
       } else {
