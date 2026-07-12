@@ -37,7 +37,7 @@ export const CraftGesture = forwardRef<HTMLDivElement>((_, ref) => {
               </div>
             </div>
             <div className="lg:col-span-7 lg:col-start-6 relative z-10 order-1 lg:order-2">
-              <img src={putarImg} alt="Twisting motion between thumb and index" className="craft-gesture-visual w-full aspect-[4/5] lg:aspect-[3/4] object-cover rounded-sm shadow-sm" />
+              <img src={putarImg} alt="Twisting motion between thumb and index" className="craft-gesture-visual w-full aspect-square lg:aspect-[4/5] max-h-[75vh] object-cover rounded-sm shadow-sm" />
               <Text variant="caption" className="craft-gesture-caption absolute -bottom-8 right-0 lg:right-12 text-text-muted italic">
                 Twisting motion between thumb and index.
               </Text>

@@ -9,7 +9,7 @@ export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
     <div ref={ref} className="flex flex-col items-center text-center gap-6 lg:gap-8 max-w-2xl mx-auto">
       <div className="hero-text-node">
         <Text variant="caption" className="uppercase tracking-widest text-text-muted drop-shadow-lg">
-          A Digital Initiative for Living Heritage
+          A Journey Through Living Heritage
         </Text>
       </div>
       
@@ -22,7 +22,7 @@ export const HeroContent = forwardRef<HTMLDivElement>((_, ref) => {
       <div className="hero-text-node">
         <Prose>
           <p className="text-text-muted text-lg lg:text-xl drop-shadow-lg">
-            {t('A digital cultural initiative dedicated to preserving and celebrating the living heritage of Sumba Ikat.')}
+            {t('A digital experience celebrating and preserving the living heritage of Sumba Ikat.')}
           </p>
         </Prose>
       </div>

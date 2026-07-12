@@ -78,26 +78,26 @@ export function Nature() {
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: block,
-              start: 'top 80%',
+              start: 'top 85%',
             }
           });
 
           // Soft erosion reveal for large imagery
           tl.fromTo(image, 
             { opacity: 0, yPercent: 5 },
-            { opacity: 1, yPercent: 0, duration: DURATION.slower, ease: EASE.default }
+            { opacity: 1, yPercent: 0, duration: DURATION.slow, ease: EASE.default }
           )
           // Caption blooms
           .fromTo(caption,
             { opacity: 0 },
-            { opacity: 1, duration: DURATION.slow, ease: EASE.inOut },
+            { opacity: 1, duration: DURATION.base, ease: EASE.inOut },
             "-=0.4"
           )
           // Paragraph materializes
           .fromTo(text,
             { opacity: 0, y: 15 },
-            { opacity: 1, y: 0, duration: DURATION.slow, ease: EASE.default },
-            "-=0.2"
+            { opacity: 1, y: 0, duration: DURATION.base, ease: EASE.default },
+            "-=0.6"
           );
 
           // Parallax strategy: Animate both image and caption together so they don't overlap

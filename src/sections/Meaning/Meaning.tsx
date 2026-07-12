@@ -48,17 +48,17 @@ export function Meaning() {
         lookBlocks.forEach((block) => {
           const qBlock = gsap.utils.selector(block);
           const tl = gsap.timeline({
-            scrollTrigger: { trigger: block, start: 'top 75%' }
+            scrollTrigger: { trigger: block, start: 'top 85%' }
           });
           
           tl.fromTo(qBlock('.meaning-look-visual'),
             { opacity: 0, y: 10 },
-            { opacity: 1, y: 0, duration: DURATION.slower, ease: EASE.default }
+            { opacity: 1, y: 0, duration: DURATION.slow, ease: EASE.default }
           )
           .fromTo(qBlock('.meaning-look-text'),
             { opacity: 0 },
-            { opacity: 1, duration: DURATION.slow, ease: EASE.inOut },
-            "+=0.2"
+            { opacity: 1, duration: DURATION.base, ease: EASE.inOut },
+            "-=0.4"
           );
         });
 

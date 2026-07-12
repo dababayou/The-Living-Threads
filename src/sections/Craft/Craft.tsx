@@ -58,22 +58,22 @@ export function Craft() {
         gestureBlocks.forEach((block) => {
           const qBlock = gsap.utils.selector(block);
           const tl = gsap.timeline({
-            scrollTrigger: { trigger: block, start: 'top 80%' }
+            scrollTrigger: { trigger: block, start: 'top 85%' } // started earlier
           });
           
           tl.fromTo(qBlock('.craft-gesture-visual'),
             { opacity: 0, yPercent: 5 },
-            { opacity: 1, yPercent: 0, duration: DURATION.slower, ease: EASE.default }
+            { opacity: 1, yPercent: 0, duration: DURATION.slow, ease: EASE.default }
           )
           .fromTo(qBlock('.craft-gesture-caption'),
             { opacity: 0 },
-            { opacity: 1, duration: DURATION.slow, ease: EASE.inOut },
+            { opacity: 1, duration: DURATION.base, ease: EASE.inOut },
             "-=0.4"
           )
           .fromTo(qBlock('.craft-gesture-text'),
             { opacity: 0, y: 15 },
-            { opacity: 1, y: 0, duration: DURATION.slow, ease: EASE.default },
-            "-=0.2"
+            { opacity: 1, y: 0, duration: DURATION.base, ease: EASE.default },
+            "-=0.6"
           );
           
           // Midground parallax drag: animate both visual and caption so they don't overlap
@@ -187,23 +187,23 @@ export function Craft() {
         // Stack elements assemble gently to signify bundled thread
         .fromTo(qTrans('.craft-transition-stack-back'),
           { opacity: 0, rotate: 0 },
-          { opacity: 1, rotate: -3, duration: DURATION.slower, ease: EASE.default },
-          "-=0.2"
+          { opacity: 1, rotate: -3, duration: DURATION.slow, ease: EASE.default },
+          "-=0.4"
         )
         .fromTo(qTrans('.craft-transition-stack-mid'),
           { opacity: 0, rotate: 0 },
-          { opacity: 1, rotate: 2, duration: DURATION.slower, ease: EASE.default },
+          { opacity: 1, rotate: 2, duration: DURATION.slow, ease: EASE.default },
           "-=0.6"
         )
         .fromTo(qTrans('.craft-transition-stack-front'),
           { opacity: 0 },
-          { opacity: 1, duration: DURATION.slower, ease: EASE.default },
+          { opacity: 1, duration: DURATION.base, ease: EASE.default },
           "-=0.6"
         )
         .fromTo(qTrans('.craft-transition-text'),
           { opacity: 0, y: 10 },
-          { opacity: 1, y: 0, stagger: 0.15, duration: DURATION.slow, ease: EASE.default },
-          "-=0.2"
+          { opacity: 1, y: 0, stagger: 0.1, duration: DURATION.base, ease: EASE.default },
+          "-=0.4"
         );
 
       });

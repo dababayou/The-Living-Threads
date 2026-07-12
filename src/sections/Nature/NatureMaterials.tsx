@@ -17,7 +17,7 @@ export const NatureMaterials = forwardRef<HTMLDivElement>((_, ref) => {
         {/* Block 1: Large Portrait */}
         <div className="nature-material-block grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center mb-32 lg:mb-48">
           <div className="lg:col-span-6 order-2 lg:order-1 relative">
-             <img src={kapassImg} alt="Unspun fiber reaching toward light" className="nature-material-image w-full aspect-[2/3] object-cover rounded-sm" />
+             <img src={kapassImg} alt="Unspun fiber reaching toward light" className="nature-material-image w-full aspect-square lg:aspect-[4/5] max-h-[70vh] object-cover rounded-sm" />
              {/* Caption integrated closely, editorial style */}
              <div className="nature-material-caption absolute bottom-0 left-0 lg:-left-8 bg-background/95 backdrop-blur-sm px-6 py-4 border-l-2 border-text max-w-[200px]">
                <Text variant="caption" className="text-text-muted">
@@ -54,7 +54,7 @@ export const NatureMaterials = forwardRef<HTMLDivElement>((_, ref) => {
         {/* Block 3: Dense Square, tight cropping */}
         <div className="nature-material-block grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           <div className="lg:col-span-5 lg:col-start-2 order-2 lg:order-1 relative">
-             <img src={jemurImg} alt="Sunlight curing the deep earth dyes" className="nature-material-image w-full aspect-square object-cover rounded-sm" />
+             <img src={jemurImg} alt="Sunlight curing the deep earth dyes" className="nature-material-image w-full aspect-[4/3] lg:aspect-square max-h-[70vh] object-cover rounded-sm" />
              <div className="nature-material-caption absolute bottom-4 right-4 bg-background/95 backdrop-blur-sm px-4 py-2 border-b-2 border-text">
                <Text variant="caption" className="text-text-muted">
                  Sunlight curing the deep earth dyes.
