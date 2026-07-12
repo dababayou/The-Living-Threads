@@ -48,7 +48,23 @@ export const translations: Record<string, Record<string, string>> = {
     "Instagram": "Instagram",
     "Exhibition": "Pameran",
     "Credits": "Kredit",
-    "TENUNA: The Living Thread": "TENUNA: Benang yang Hidup"
+    "TENUNA: The Living Thread": "TENUNA: Benang yang Hidup",
+    "Image Credits": "Kredit Gambar",
+    "The beautiful imagery featured in this documentary project was sourced from the following creators, platforms, and organizations. We deeply appreciate their work in documenting the heritage of Sumba Ikat.": "Gambar-gambar indah yang ditampilkan dalam proyek dokumenter ini bersumber dari para pembuat karya, platform, dan organisasi berikut. Kami sangat menghargai kontribusi mereka dalam mendokumentasikan warisan Tenun Ikat Sumba.",
+    "The Collection": "Koleksi",
+    "Weave Variations": "Variasi Tenunan",
+    "Explore the rich tapestry of Sumba Ikat motifs, each carrying profound meaning and history.": "Jelajahi kekayaan motif Tenun Ikat Sumba, yang masing-masing membawa makna dan sejarah yang mendalam.",
+    "Motif Manusia": "Motif Manusia",
+    "Motif Rusa": "Motif Rusa",
+    "Motif Kuda": "Motif Kuda",
+    "Motif Patola Ratu": "Motif Patola Ratu",
+    "Motif Kakatua": "Motif Kakatua"
   },
-  en: {}
+  en: {
+    "Motif Manusia": "Human Pattern",
+    "Motif Rusa": "Deer Pattern",
+    "Motif Kuda": "Horse Pattern",
+    "Motif Patola Ratu": "Patola Ratu Pattern",
+    "Motif Kakatua": "Kakatua Pattern"
+  }
 };

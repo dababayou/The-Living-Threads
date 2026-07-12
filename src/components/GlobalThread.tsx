@@ -133,7 +133,7 @@ export function GlobalThread() {
         <defs>
           {/* Keeps the thread legible regardless of what's behind it —
               matters most for the pale raw stage on a white page */}
-          <filter id="threadShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <filter id="threadShadow" filterUnits="userSpaceOnUse" x="-10%" y="-10%" width="120%" height="120%">
             <feDropShadow dx="0" dy="1" stdDeviation="1.1" floodColor="#000000" floodOpacity="0.18" />
           </filter>
 

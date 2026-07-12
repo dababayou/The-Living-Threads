@@ -4,6 +4,7 @@ import { Craft } from '../sections/Craft';
 import { Meaning } from '../sections/Meaning';
 import { LivingHeritage } from '../sections/LivingHeritage';
 import { Hope } from '../sections/Hope';
+import { Gallery } from '../sections/Gallery/Gallery';
 import { Footer } from '../sections/Footer';
 import { useSmoothScroll } from '../animations';
 import { GlobalThread } from '../components/GlobalThread';
@@ -24,6 +25,7 @@ export default function App() {
         <Meaning />
         <LivingHeritage />
         <Hope />
+        <Gallery />
         <Footer />
       </main>
     </LanguageProvider>
