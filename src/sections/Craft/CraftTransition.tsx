@@ -30,7 +30,7 @@ export const CraftTransition = forwardRef<HTMLDivElement>((_, ref) => {
         
         <div className="craft-transition-text">
           <Text variant="caption" className="uppercase tracking-widest text-text-muted mb-6">
-            The Technique Complete
+            The Making Complete
           </Text>
           <Heading variant="display" level={3}>
             Threads await meaning.
